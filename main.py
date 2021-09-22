@@ -2,9 +2,11 @@ import discord
 from discord.ext import commands
 import datetime
 
+import os
 from urllib import parse, request
 import re
 
+TK = os.getenv('TOKEN')
 bot = commands.Bot(command_prefix='>', description="NPI-Bot ©2021")
 
 @bot.command()
@@ -85,4 +87,4 @@ async def on_message(message):
   channel = bot.get_channel(889601437305282623)
 
   await channel.send(embed=embed)
-bot.run('ODg5MzgzMzE1MDcxNjk2OTI3.YUgcwg.yFXfmR8J1g4VHA7fQ_hQKR3uDVI')
+bot.run(TK)
