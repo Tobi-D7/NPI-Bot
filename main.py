@@ -3,8 +3,6 @@ from discord.ext import commands
 import datetime
 
 import os
-from urllib import parse, request
-import re
 
 TK = os.getenv('TOKEN')
 bot = commands.Bot(command_prefix='>', description="NPI-Bot ©2021")
