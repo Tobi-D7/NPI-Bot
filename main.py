@@ -49,7 +49,7 @@ async def info(ctx):
     embed.add_field(name="Server Region", value=f"{ctx.guild.region}")
     embed.add_field(name="Server ID", value=f"{ctx.guild.id}")
     embed.add_field(name="Ping", value=f"{bot.latency}")
-     #embed.set_thumbnail(url=f"{ctx.guild.icon}")
+     #embed.set_thumbnail(url=f"{ctx.guild.icon_url}")
     embed.set_thumbnail(url=f"{ctx.guild.icon_url}")
 
     await ctx.send(embed=embed)
