@@ -60,7 +60,11 @@ async def helps(ctx):
   
     await ctx.send(embed=embed)
 
-
+@bot.command()
+async def maths(ctx, func, vals)
+    embed = discord.Embed(title=f"Maths", description=func)
+    embed.add_field(name="Result", value=vals[0] + vals[1])
+    ctx.send(embed=embed)
 # Events
 @bot.event
 async def on_ready():
